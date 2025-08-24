@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Remember Streetwear</title>
+
+<link rel="stylesheet" href="stylying.css">
+
+<style>
+  
+</style>
+</head>
+<body>
+  <img src="logoflipping22.png" alt="Logo" class="logo">
+  <img src="cart.png.png" alt="Cart" class="cart" id="cart-icon">
+  <div class="cart-count" id="cart-count">0</div>
+  <header>
+    <h1>JOSH&19</h1>
+    <div class="slogan">Wear Your Story</div>
+    <a href="main.html" class="button-link"><button>Home</button></a>
+  </header>
+  <section class="shop">
+    <div class="product">
+      <img src="shirt1.png" alt="Product 1">
+      <h3>JOSH X CCM 25</h3>
+      <button class="add-btn">Add</button>
+    </div>
+    <div class="product">
+      <img src="shirt34.png" alt="Product 2">
+      <h3>JOSH LIMITED [87]</h3>
+      <button class="add-btn">Add</button>
+    </div>
+    <div class="product">
+      <img src="SHIRT2.png" alt="Product 3">
+      <h3>JOSH ART BOI</h3>
+      <button class="add-btn">Add</button>
+    </div>
+    <div class="product">
+      <img src="1.png" alt="Product 4">
+      <h3>JOSH 888 [T]</h3>
+      <button class="add-btn">Add</button>
+    </div>
+    <div class="product">
+      <img src="2.png" alt="Product 5">
+      <h3>JOSH X MANBI[T]</h3>
+      <button class="add-btn">Add</button>
+    </div>
+    <div class="product">
+      <img src="3.png" alt="Product 6">
+      <h3>JOSH M&W [T]</h3>
+      <button class="add-btn">Add</button>
+    </div>
+  </section>
+  <footer>
+    &copy; 2025 JOSH&19. All rights reserved.
+  </footer>
+   
+  
+  <script>
+    const cartCountElem = document.getElementById('cart-count');
+    let cartCount = 0;
+
+    document.querySelectorAll('.add-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        cartCount++;
+        cartCountElem.textContent = cartCount;
+      });
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Remember Streetwear</title>
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-tap-highlight-color: transparent; /* removes the keyboard line flash on tap */
+    outline: none;
+  }
+
+  body {
+    color: white;
+    background: url("background33.jpg") no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo {
+    width: 140px;
+    height: auto;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    animation: flip 4s infinite linear;
+  }
+
+  @keyframes flip {
+    0% { transform: scaleX(1); }
+    50% { transform: scaleX(-1); }
+    100% { transform: scaleX(1); }
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 140px 20px 60px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  h1 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 48px;
+    margin: 0;
+    text-shadow: 2px 2px 0 #222;
+  }
+
+  .slogan {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 16px;
+    margin: 20px 0 40px;
+    font-weight: bold;
+    color: #ccc;
+    letter-spacing: 1px;
+    text-align: center;
+  }
+
+  button {
+    background: #C0C0C0;
+    border: 2px solid #fff;
+    border-right-color: #808080;
+    border-bottom-color: #808080;
+    color: black;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 18px;
+    padding: 14px 48px;
+    cursor: pointer;
+    box-shadow: inset 1px 1px 0 white, inset -1px -1px 0 #808080;
+    user-select: none;
+    transition: none;
+  }
+
+  button:active {
+    border-color: #808080 #fff #fff #808080;
+    box-shadow: none;
+    background: #C0C0C0;
+  }
+
+  a.button-link {
+    text-decoration: none;
+  }
+
+  @media (max-width: 768px) {
+    .logo {
+      width: 100px;
+      top: 10px;
+      left: 10px;
+    }
+
+    h1 {
+      font-size: 28px;
+    }
+
+    .slogan {
+      font-size: 12px;
+      margin: 10px 0 30px;
+    }
+
+    button {
+      font-size: 14px;
+      padding: 10px 24px;
+    }
+  }
+</style>
+</head>
+<body>
+  <img src="logoflipping22.png" alt="Logo" class="logo">
+  <main>
+    <h1>JOSH&19</h1>
+    <div class="slogan">remeber where you came from.</div>
+    <a href="shop.html" class="button-link">
+      <button>Shop</button>
+    </a>
+  </main>
+</body>
+</html>
